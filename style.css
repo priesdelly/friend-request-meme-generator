@@ -161,3 +161,26 @@ h2 {
     background-color: #e4e6eb;
     color: #050505;
 }
+
+.page-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+}
+
+.page-footer h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.page-footer ul {
+    padding-left: 20px;
+}
+
+.page-footer li {
+    margin-bottom: 8px;
+}
