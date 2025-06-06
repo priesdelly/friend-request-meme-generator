@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator: Friend Request</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Friend Request Meme Generator</h1>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="nameInput">ชื่อ (Name):</label>
+                <input type="text" id="nameInput" placeholder="ใส่ชื่อที่นี่..." value="Waruntoru Paonil">
+            </div>
+            <div class="control-group">
+                <label for="imageInput">รูปโปรไฟล์ (Profile Picture):</label>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+            <div class="control-group">
+                <label for="langSelect">ภาษา (Language):</label>
+                <select id="langSelect">
+                    <option value="th">ไทย (Thai)</option>
+                    <option value="en">อังกฤษ (English)</option>
+                </select>
+            </div>
+        </div>
+
+        <h2>ผลลัพธ์ (Preview)</h2>
+        <div class="meme-preview-card">
+            <div class="profile-picture-container">
+                <img id="profileImage" src="https://via.placeholder.com/80" alt="Profile Picture">
+                <div class="add-friend-icon">
+                    <div class="plus-icon"></div>
+                </div>
+            </div>
+            <div class="request-info">
+                <p class="request-text">
+                    <strong id="displayName">Waruntoru Paonil</strong>
+                    <span id="requestTextPart">ได้ส่งคำขอเป็นเพื่อนถึงคุณ</span>
+                </p>
+                <p class="time-text">32 นาที</p>
+                <div class="buttons">
+                    <button class="confirm-btn" id="confirmButton">ยืนยัน</button>
+                    <button class="delete-btn" id="deleteButton">ลบ</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
